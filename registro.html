@@ -48,7 +48,9 @@
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlegth="10" maxlength="10" data-tipo="numero">
+                        <!--phone number is a little jodido para conseguir el pattern deseado y que sea tipo numero, etc.
+                            El de abajo anda bien, pero buscar en la web si requiere algo ams especifico-->
+                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required maxlength="10" data-tipo="numero">
                         <label class="input-label" for="phoneNumber">Número telefónico</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -76,7 +78,7 @@
         </section>
     </main>
 
-    <script src="./js/validaciones.js"></script>
+    <script type="module" src="./js/app.js" ></script>
 </body>
 </html>
 
